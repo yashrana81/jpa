@@ -42,11 +42,12 @@ public class JpaApplication {
 		//TO delete user
 
 		// userRepository.delete(result2);
-		Iterable<Integer> ids = List.of(52,102);
-		Iterable<User> listOfUsers = userRepository.findAllById(ids);
-		userRepository.deleteAll(listOfUsers);
+		// Iterable<Integer> ids = List.of(52,102);
+		// Iterable<User> listOfUsers = userRepository.findAllById(ids);
+		// userRepository.deleteAll(listOfUsers);
 		
-
+		List<User>users = userRepository.getUserByName("name2");
+		System.out.println(users);
 
 
 	}
